@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-image: url("./images/bg-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.weather__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.weather__input {
+    outline: none;
+    padding: 20px 7%;
+    border-radius: 20px;
+    border: none;
+    margin-right: 5px;
+    background: hsla(0, 0%, 98%, .85);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather__btn {
+    background-color: #FFD80D;
+    padding: 15px 25px;
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.weather__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 380px;
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0 rgba(15, 15, 15, .404);
+    background: hsla(0, 0%, 98%, .85);
+}
+
+.weather__city {
+    display: flex;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.weather__city--country {
+    padding: .2em .6em;
+    margin-left: .2em;
+    border-radius: 30px;
+    color: #fff;
+    background: #ff8c00;
+    text-transform: uppercase;
+    font-size: .5em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.weather__temp {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #1e2432;
+    text-align: center;
+}
+
+.weather__temp sub {
+    font-size: .5em;
+}
+
+.weather__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather__info--type {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-family: sans-serif;
 }
